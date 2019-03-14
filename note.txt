@@ -1,0 +1,31 @@
+一/创建项目
+  npm i express-generator -g（只需执行一次）
+  express myapp --view=ejs(要使用ejs模板--跟html相近)
+  cd myapp
+  cnpm i
+  修改package.json
+  npm run dev
+二/学习ejs语法
+routes/index.js中有以下语句，其中title就是一个变量，这个变量可以渲染到页面中
+  res.render('index',{title:'sh1811'});
+  views/index.ejs中可以使用以下语法渲染后端所传递的数据
+  ejs语法：https://ejs.bootcss.com/
+  <% %>'脚本'标签，用于流程控制，无输出---js的逻辑处理（条件判断/遍历）
+  <%= %> 输出数据到模板（输出是转义HTML标签）---html标签会原样输出
+  <%- %>输出非转义的数据到模板 ---html标签会被解析
+  <%_ %>删除其前面的空格符
+  <%# %>注释标签，不执行/不输出内容
+  <%% %>输出字符串'<%'
+  %>一般结束标签
+  -%>删除紧随其后的换行符
+  _%>将结束标签后面的空格符删除
+  <%- include(path) %>将path页面包含到当前页面
+  三/构建一个后台管理系统 基于http://adminlte.la998.com/starter.html
+  1/复制AdminLTE-2.3.7下的starter.html代码到index.ejs
+  2/复制AdminLTE-2.3.7下的bootstrap/dist/plugins三个文件夹到public文件夹内
+  3/折叠代码分出头部header.ejs,左侧的内容menu.ejs,底部的footer.ejs,右侧面板siderbar.ejs,index.ejs中导入即可
+  4，编辑menu.ejs中的导航
+  首页/用户管理/产品管理/购物车管理
+  5.编辑页面对应的路由
+  cart.js  product.js user.js编辑好
+  
