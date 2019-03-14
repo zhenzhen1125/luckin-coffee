@@ -1,0 +1,86 @@
+@import "@/qunar/reset.scss";
+
+.loginicon{
+  position: absolute;
+  top: 0.2rem;
+  left: 0.2rem;
+  font-size: 0.2rem;
+  color: black;
+}
+.loginimg{
+  width: 30%;
+  position: absolute;
+  left: 0;
+  top: 10%;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.registercontent{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 36%;
+  margin: auto;
+  width: 80%;
+  // height: 2rem;
+}
+.registerinput{
+  width: 100%;
+  height: 0.4rem;
+  border: none;
+  border-bottom: 1px #f1f1f1 solid;
+}
+.loginregister{
+  font-size: 0.18rem;
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+  color: rgb(53, 54, 54);
+  border: none;
+  background: white;
+}
+::placeholder{
+  font-size: 0.14rem;
+}
+.am-toast{
+
+  div{
+    background: rgba(0,0,0,.4) !important;
+    color: white !important;
+    border-radius: 0.1rem;
+  }
+  .am-toast-text{
+    background: #f1f1f1;
+  }
+  
+}
+.am-icon{
+  display: none;
+}
+.am-button-primary{
+  span{
+    background: none;
+  }
+}
+/* .registerbutton1{
+  width: 100%;
+  height: 0.4rem;
+  background: rgb(42,160,43);
+  border: none;
+  border-radius: 0.06rem;
+  color: white;
+  font-size: 0.18rem;
+  margin-bottom: 0.1rem;
+}
+.registerbutton2{
+  width: 100%;
+  height: 0.4rem;
+  background: white;
+  border: none;
+  border-radius: 0.06rem;
+  color: #a3caf7;
+  font-size: 0.18rem;
+  border: 1px #a3caf7 solid;
+} */

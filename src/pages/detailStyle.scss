@@ -1,0 +1,184 @@
+@import '@/qunar/reset.scss';
+@keyframes move{
+  from{
+    opacity: 0;
+    // margin-left: 50%;
+    transform: scale(0);
+    // margin-top:50%
+    // right: 0;
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+    // margin-left: 0;
+    // margin-top:0;
+  }
+}
+
+.detaillayout{
+  position: absolute;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, .2);
+  // position: relative;
+  height: 100%;
+  width: 100%;
+  @include flexbox();
+  @include justify-content();
+  @include align-items();
+  // animation: move 1s ;
+  // position: absolute;
+}
+.detailbox{
+  animation: move 1s ;
+  border-radius: .2rem;
+  // background: rgba(0, 0, 0, 0.2);
+  // height: 90%;
+  width: 80%;
+  // top: 0;
+  // bottom:0;
+  // left: 0;
+  // right: 0;
+  // margin: auto;
+  // position: absolute;
+  @include flexbox();
+  @include flex-direction(column);
+  
+  .header1{
+    @include rect(100%,1.5rem);
+    background: none;
+    height: 1.5rem;
+    // @include bgColor();
+    // @include background-color();
+    img{
+      @include rect(100%,1.5rem);
+      border-radius:.2rem .2rem 0 0;
+    }
+  }
+  .content {
+    @include padding(.15rem);
+    @include flex();
+    @include rect(100%,auto);
+    @include overflow();
+    max-height: 3rem;
+    .choice{
+      border-bottom: .01rem solid #e5e5e5;
+      li{       
+         margin-bottom:.13rem;
+         i{display:inline-block;width:.4rem;}
+        
+          span{margin:0 .1rem 0 0;display: inline-block;border-radius: .2rem;text-align: center;border: .01rem solid#ccc2b5;@include rect(.6rem,.3rem);line-height: .3rem;color: #b8ab9b}
+          span.active{
+            background: #cbc1b4;color: #fff
+          
+         }
+        }
+    }
+    .say{
+      border-bottom: .01rem solid #e5e5e5;
+      padding-bottom: .2rem;
+      h2{padding: .1rem 0}
+        i{
+        float: left;
+        img{height: .3rem;}
+      }
+      .des{
+        
+        padding: 0 0 0 .4rem;
+
+    }
+  }
+  .say:after{clear: both;content: "";display: block}
+  
+  .good{
+    h2{padding: .1rem 0;}
+    .des{
+      p{
+        color:#808080
+      }
+    }
+  }
+}
+  .detailfooter{
+    border-radius: .2rem;
+    .price{
+      border-top:.01rem solid #e5e5e5;
+      border-bottom:.01rem solid #e5e5e5;
+      padding: .2rem .1rem 0 .1rem;
+      @include flexbox();
+      @include justify-content(space-between);
+      .left{
+        .left-top{font:800 .16rem/.20rem "";}
+        .left-bottom{font-size: .10rem;padding:.1rem 0;}
+      }
+      
+      
+    }
+    .num{
+      float:right;
+      span{height: .25rem;width: .25rem;border-radius: 50%;text-align: center;line-height: .25rem;font-size: .18rem;display: inline-block;}
+      .add{color:#89a9ce; border:.01rem solid #89a9ce;}
+      .sub{background: #89a9ce;color: #fff;border:.01rem solid #89a9ce;}
+      i{display: inline-block;padding: 0 .1rem;}
+    }
+    .buy{
+      border-radius: 0 0 .2rem .2rem;
+      padding: .2rem .1rem;
+      height: .7rem;
+      span{float: right;margin-left: .1rem;height: .35rem;line-height: .35rem;text-align: center;padding: 0 .05rem;border-radius: .05rem}
+      i{padding: 0 .05rem;background: #89a9ce}
+      .addCart{
+        color: antiquewhite;background:#89a9ce ;
+        @include flexbox();
+      
+        b{font-weight: 100}
+        i{font-size: .18rem}
+      }
+      .love{
+        color: #89a9ce;
+        background: #f3f3f3;
+        border:.01rem solid  #89a9ce;
+       i{ background: #f3f3f3;}
+      }
+      .active{
+        color:#f00
+      }
+    }
+    .buy::after{
+      display:block;
+      content: "";
+      clear: both
+    }
+  }
+ }
+
+ @keyframes loads {
+   from{
+
+    transform: rotate(0deg);
+   }
+    to {
+      transform: rotate(360deg);
+   
+    }
+ }
+ .loadings{
+   position: fixed;
+   margin: auto;
+   bottom: 0;
+   top: 0;
+   left: 0;
+   right:0;
+   width:.5rem;
+   height: .5rem;
+   background: none;
+   .circle{height: .5rem;width:.5rem;border-radius: 50%;animation:loads 0.5s infinite linear;
+    border: .02rem solid #fff;
+    border-right-color:#89a9ce;
+    border-top-color: #89a9ce;
+    border-bottom-color: #89a9ce;
+    background: none
+  }
+  p{margin-top: .2rem;color: #fff;background: none}
+ 
+ }
+ 

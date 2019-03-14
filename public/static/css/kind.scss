@@ -1,0 +1,139 @@
+@import '@/qunar/reset.scss';
+
+.kindbox{
+  @include flexbox();
+  @include flex-direction(column);
+  @include rect(100%,100%);
+  @include position(relative);
+    .kindheader{
+        @include font-size(.16rem);
+        @include color(#383838);
+        @include text-align();
+        @include line-height(.44rem);
+        @include rect(100%,.44rem);
+    }
+    .kindcontent{
+        @include flex();
+        @include rect(100%,100%);
+        @include flexbox();
+        @include flex-direction(column);
+        .main{
+            @include rect(100%,100%);
+            @include flexbox();
+            .main-l{
+                @include margin(0.08rem 0.1rem 0 0);
+                @include background-color(#f7f7f7);
+                // @include rect(1rem,100%);
+                li{
+                   @include rect(1rem,.4rem);
+                   @include border(0 0 .01rem,#e5e5e5,solid,null);
+                   a{
+                       @include background-color(#f7f7f7);
+                       @include font-size(.14rem);
+                       @include color(#666);
+                       @include display(inline-block);
+                       @include rect(100%,100%);
+                       @include text-align();
+                       @include line-height(.4rem);
+                   }
+                }
+                .leftactive>a{
+                    background: #fff;
+                }
+                .activea{background:#fff }
+                &>li:last-child{
+                  @include border(0);
+                }
+            }
+            .main-r{
+              @include overflow();
+              @include flex();
+              @include rect(100%,auto);
+              @include margin(0 0 0 .1rem);
+              ul{
+                // .li{
+                //     h4{
+                //         @include color(#555);  
+                //     }
+                .itemtitle{
+                    font-weight:800;
+                    padding: .1rem 0;
+                }
+                    .list{
+                        @include position(relative);
+                        @include flexbox();
+                        @include border(0 0 .01rem,#eee,solid);
+                        @include margin(.05rem 0 0);
+                        @include padding-bottom(.05rem);
+                        img{
+                            @include rect(.8rem,.8rem);
+                            @include border(0,0,0,.2rem);
+                            @include margin(0 .05rem 0 0);
+                        }
+                        .list-r{
+                            @include color(#383838);
+                            @include flexbox();
+                            @include flex-direction(column);
+                            // state===1的样式
+                            .list-r-t{
+                                @include flexbox();
+                                @include flex-direction(column);
+                                .span{
+                                    @include color(#555);
+                                    @include font-size(.12rem); 
+                                }
+                            }
+                            // 售罄时的样式 state===0
+                            .list-r-t2{
+                                @include flexbox();
+                                @include flex-direction(column);
+                                @include color(#d4d4d4);
+                                .span{
+                                    @include font-size(.12rem); 
+                                }
+                            }
+                            &>h3:last-child{
+                                @include margin(.1rem 0 0);
+                            }
+                        }
+
+                    }
+                        .button{
+                          @include display(block);
+                          @include rect(.2rem,.2rem);
+                          @include background-color(#80aad2);
+                          border:0;
+                          @include border-radius(.5rem);
+                          @include font-size(.16rem);
+                          @include color(#fff);
+                          @include position(absolute);
+                          @include bottom(.1rem);
+                          @include right(0.1rem);
+                          @include text-align();
+                          @include line-height(.2rem);
+                        }
+                        //售罄时的样式
+                        .zhao{
+                            @include fullscreen(100,absolute);
+                            @include background-color(#B8B8B8);
+                            @include opacity(.2);
+                        }
+                        .end{
+                            @include position(absolute);
+                            @include left(.12rem);
+                            @include top(.12rem);
+                            @include rect(.5rem,.5rem);
+                            @include background-color(rgba(0,0,0,.8));
+                            @include color(#fff);
+                            @include border-radius(50%);
+                            @include text-align();
+                            @include line-height(.5rem);
+                            // @include z-index(79);
+                        }
+                    // }
+                 }
+              }
+        }
+    }
+}
+

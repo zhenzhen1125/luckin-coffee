@@ -1,0 +1,119 @@
+@import '@/qunar/reset.scss';
+.ordercontent{
+  overflow: hidden;
+}
+*{margin:0;
+  padding: 0;
+}
+.orderheader{
+  @include font-size(.16rem);
+  @include color(#383838);
+  @include text-align();
+  @include line-height(.44rem);
+}
+li,a{list-style:
+   none;
+  }
+.color{color
+  :#8f8f8f;
+}
+.pd-r{
+  padding-right: 0.1rem;
+}
+.flex{display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order{
+  width:4.4rem;
+}
+.ordermx{
+  width:100%;
+  margin-top:-0.9rem;
+  background:#f3f3f3;
+}
+// .pd-r p{
+//   color:#8f8f8f;
+// }
+.order li{
+  padding-left:0.1rem;
+  border:0.1rem solid #f3f3f3;
+  border-right-width:0;
+  border-left-width:0;
+}
+
+.order li .main-top p{line-height:
+  0.4rem;
+  }
+.order li p.bd-b{border-bottom
+  :0.01rem solid #ddd}
+// .order li .main-bottom{
+
+// }
+/*ul li .main-bottom .main-b-title{display: flex;justify-content: space-between;align-items: center;}*/
+.order li .main-bottom .main-b-title h4{
+  margin-top:0.1rem;
+  line-height:0.3rem;
+}
+.order li .main-bottom .main-b-money button{border: 0.01rem solid #ddd;
+  background: none;
+  padding:0.04rem;
+  margin: 0.2rem 0 0.1rem;
+}
+.am-tabs-pane-wrap .order2{
+  margin-top:1rem;
+
+}
+.am-tabs-pane-wrap{
+  background:#f3f3f3;
+}
+
+#order-content2{
+  position: relative;
+  height:100%;
+  width:100%;
+  background:#f3f3f3;
+}
+#order-content2 .orderimg{
+  display:block;
+  width: 0.6rem;
+  height:0.6rem;
+  margin: 0 auto;
+  margin-top:1.2rem;
+ }
+#order-content2 p{
+  display:block;
+  font-size:0.14rem;
+  color:#969696;
+  margin-top:0.5rem;
+  width:1.1rem;
+  background:#f3f3f3;
+  margin: 0 auto;
+  margin-top:0.3rem;
+  letter-spacing:0.01rem;
+  height:0.2rem;
+}
+#order-content2 button{
+  display:block;
+  margin: 0 auto;
+  border:0.01rem solid #a3a7a6;
+  width:1.1rem;
+  height:0.3rem;
+  border-radius: 0.02rem;
+  background:#fefefe;
+  color:#90acb7;
+  margin-top:0.4rem;
+  font-size:0.16rem;
+  
+}
+.order-bo{
+  font-size:0.14rem;
+  color:#a8a8a8;
+  display:block;
+  margin: 0 auto;
+  background:#f3f3f3;
+  margin-top:0.2rem;
+  letter-spacing:0.01rem;
+
+}

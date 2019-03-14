@@ -1,0 +1,111 @@
+@import "@/qunar/reset.scss";
+// .ronqi{
+//   @include flex();
+//   @include rect(100%, auto);
+//   background: #f1f1f1;
+//   @include overflow();
+// }
+.first1{
+  width:100%;
+  height:1.7rem;
+  background:rgb(97, 71, 58);
+  position: relative;
+}
+// .bellposition{
+//   margin-top: 0.3rem;
+//   position: absolute;
+//   right: 0.1rem;
+// }
+.loginp{
+  top: 0.7rem;
+  position: absolute;
+  left: 0.9rem;
+}
+.denglu{
+  font-size: 0.18rem;
+  color: white;
+  // margin-left: 0.1rem;
+  border: none;
+  background: rgb(97, 71, 58);
+  position: absolute;
+}
+.touxiangimg{
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.6rem;
+  left: 0.2rem;
+}
+.imgtx{
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+}
+.icondlp{
+  // display: inline-block;
+  position: absolute;
+  right: 0.1rem;
+  top: 0.9rem;
+  color:rgb(193,193,193);
+}
+
+.two2{
+  width:100%;
+  // height:1.8rem;
+  background:#f1f1f1;
+  // position: fixed;
+}
+
+.spaniconcolor{
+  color:rgb(193,193,193);
+  margin-left: 0.2rem;
+}
+.userp{
+  width:100%;
+  height:0.5rem;
+  line-height: 0.5rem;
+  border-bottom: 1px #f1f1f1 solid;
+  // position:fixed;
+  position: relative;
+  background: white;
+}
+.userp1{
+  width: 100%;
+  height:0.5rem;
+  line-height: 0.5rem;
+  background: white;
+  margin-bottom: 0.1rem;
+  position: relative;
+}
+.userp2{
+  width: 100%;
+  height:0.5rem;
+  line-height: 0.5rem;
+  background: white;
+  position: relative;
+  // margin-bottom: 0.1rem;
+}
+.spaniconposition{
+  color: rgb(193,193,193);
+  right: 0.1rem;
+  display: inline-block;
+  // position: fixed;
+  position: absolute;
+  font-size: 0.1rem;
+}
+.spanitem{
+  margin-left: 0.2rem;
+}
+.userimg{
+  text-align: center;
+  background: #f1f1f1;
+  // margin-top: 0.04rem;
+  // position: fixed;
+}
+.imgdx{
+  width:95%;
+  margin-top: 0.1rem;
+}
+
+

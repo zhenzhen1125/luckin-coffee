@@ -1,0 +1,167 @@
+@import '@/qunar/reset.scss';
+body{
+
+}
+.cartbox{
+    @include flexbox();
+    @include flex-direction(column);
+    // @include position(relative);
+    .cartheader{
+        @include font-size(.16rem);
+        @include color(#383838);
+        @include text-align();
+        @include line-height(.44rem);
+    }
+    .cartcontent{
+        background: #fff;
+        @include rect(100%,100%);
+        @include flexbox();
+        @include flex-direction(column);
+        // @include margin(0 0 .5rem);
+        // @include flex();
+        @include overflow();
+        @include background-color(#f3f3f3);
+        img{
+            @include rect(100%,.8rem);
+        }
+        ul {
+            @include rect(100%,auto);
+            li{
+                @include flexbox();
+                @include padding(.1rem 0 0 .1rem);
+                .am-list-line{
+                  border:0;
+                  width: 1px;
+                }
+                .goods{
+                    @include flexbox();
+                    @include rect(100%,auto);
+                    @include justify-content(space-between);
+                    @include margin(0 .1rem 0 0);
+                    @include padding-top(.1rem);
+                    @include border(.01rem 0 0,#d4d4d4,solid);
+                    .goods-l{
+                        @include font-size(.12rem);
+                        h3{
+                          @include font-size(.16rem);
+                          @include color(#000);
+                        }
+                        p{
+                            @include color(#363636);
+                        }
+                        span{
+                            @include color(#97b8d9);
+                        }
+                    }
+                    .goods-r{
+                        @include flexbox();
+                        @include justify-content();
+                        @include align-items();
+                        
+                        span{
+                            @include font-size(.16rem);
+                            @include color(#000); 
+                            @include margin-right(.1rem);
+                        }
+                        .jian{
+                            @include rect(.2rem,.2rem);
+                            @include background-color(#fff);  
+                           border:1px solid #97b8d9;
+                           border-radius:50%;
+                           @include text-align();
+                            @include line-height(.2rem);
+                            @include color(#97b8d9);
+                            @include margin-right(0);
+                          
+                        }
+                        .tex{
+                          @include rect(.2rem,.15rem);
+                          border:0;
+                          @include text-align();
+                        }
+                        .jia{
+                            @include rect(.2rem,.2rem);
+                            @include background-color(#97b8d9);  
+                           border:1px solid #97b8d9;
+                           border-radius:50%; 
+                           @include text-align();
+                           @include line-height(.2rem);   
+                           @include color(#fff);                           
+                        }
+                    }
+                }
+                &:first-child .goods{
+                  @include border(0);
+                }
+            }
+            .nullcart{
+                @include padding(0);
+                @include text-align();
+                @include flexbox();
+                @include flex-direction(column);
+                @include justify-content();
+                @include align-items();
+                @include background-color(#f3f3f3);
+               
+                .orderimg{
+                    @include rect(.6rem,.6rem);
+                    @include margin(1.2rem 0 0 0);
+                   }
+                p{
+                    @include rect(auto,.2rem);
+                    @include color(#969696);
+                    @include background-color(#f3f3f3);
+                    @include margin(.2rem 0 0 0);
+                    @include font-size(.14rem);
+                  }
+                a{
+                    @include display(inline-block);
+                    @include margin(.3rem 0 0 0);
+                    button{
+                        @include rect(1.3rem,.35rem);
+                        @include color(#97b8d9);
+                        @include background-color(#fefefe);
+                        @include text-align();
+                        @include line-height(.35rem);
+                        border:0.01rem solid #97b8d9;
+                        border-radius: 0.05rem;
+                      }
+                }
+            }
+        }
+    }
+    .price{
+        @include rect(100%,.5rem);
+        @include flexbox();
+        @include justify-content(space-between);
+        @include font-size(.14rem);
+        @include line-height(.5rem);
+        @include text-align();
+        @include position(absolute);
+        @include bottom(.5rem);
+        @include left(0);
+        @include right(0);
+        @include z-index(100);
+        @include background-color(#fff);
+        .total{
+          @include margin-left(.2rem);
+          @include color(#383838);
+        //   @include rect(1.2rem,.5rem);
+          &>span:last-child{
+            @include font-size(.24rem);
+            @include color(#000);
+            }
+        }
+        .pay{
+            @include rect(1.2rem,.5rem);
+            @include background-color(#97b8d9);
+            @include color(#fff);
+            @include font-weight(bold);
+        }
+    }
+    .price1{
+        @include display(none);
+        @include background-color(#f3f3f3);
+    }
+   
+}

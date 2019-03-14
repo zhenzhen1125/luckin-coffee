@@ -1,0 +1,65 @@
+@import "@/qunar/reset.scss";
+
+.loginicon{
+  position: absolute;
+  top: 0.2rem;
+  left: 0.2rem;
+  font-size: 0.2rem;
+  color: black;
+}
+.loginimg{
+  width: 30%;
+  position: absolute;
+  left: 0;
+  top: 10%;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.registercontent{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 36%;
+  margin: auto;
+  width: 80%;
+  // height: 2rem;
+}
+.registerinput{
+  width: 100%;
+  height: 0.4rem;
+  border: none;
+  border-bottom: 1px #f1f1f1 solid;
+}
+.registerbutton{
+  width: 100%;
+  height: 0.4rem;
+  background: #5ab0f7;
+  border: none;
+  border-radius: 0.06rem;
+  color: white;
+  font-size: 0.18rem;
+}
+.registerbottomp{
+  font-size: 0.12rem;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+.registerspan{
+  color: rgb(53, 73, 183);
+  cursor: pointer;
+}
+.am-toast{
+
+  div{
+    background: #a09e9e !important;
+    color: white !important;
+    border-radius: 0.1rem;
+  }
+  .am-toast-text{
+    background: #f1f1f1;
+  }
+  
+}
+
